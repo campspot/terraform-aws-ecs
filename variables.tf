@@ -26,7 +26,7 @@ variable "capacity_providers" {
 variable "default_capacity_provider_strategy" {
   description = "The capacity provider strategy to use by default for the cluster. Can be one or more."
   type        = list(map(any))
-  default     = ["FARGATE_SPOT"]
+  default     = [{capacity_provider = "FARGATE_SPOT"}]
 }
 variable "container_insights" {
   description = "Controls if ECS Cluster has container insights enabled"
