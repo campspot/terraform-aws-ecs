@@ -14,8 +14,9 @@ variable "tags" {
   default     = {
     name = "default-campspot-ecs",
     customer    = "campspot-default",
-    environment = "${terraform.workspace}",
+    environment = "default",
     costcenter  = "default",
+    application = "default",
   }
 }
 variable "capacity_providers" {
