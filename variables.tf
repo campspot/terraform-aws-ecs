@@ -13,9 +13,9 @@ variable "tags" {
   type        = map(string)
   default     = {
     name = "default-campspot-ecs",
-    customer = "",
-    environment = "",
-    costcenter = "",
+    customer    = "campspot-default",
+    environment = "${terraform.workspace}",
+    costcenter  = "default",
   }
 }
 variable "capacity_providers" {
