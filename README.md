@@ -86,6 +86,7 @@ No modules.
 | <a name="input_default_capacity_provider_strategy"></a> [default\_capacity\_provider\_strategy](#input\_default\_capacity\_provider\_strategy) | The capacity provider strategy to use by default for the cluster. Can be one or more. | `list(map(any))` | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name to be used on all the resources as identifier, also the name of the ECS cluster | `string` | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | A map of tags to add to ECS Cluster | `map(string)` | `{}` | no |
+| <a name="kms_key_id"></a> [tags](#input\_kms_key_id) | Kms_key to be used for logging | `string` | `null` | yes |
 
 ## Outputs
 

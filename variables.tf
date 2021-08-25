@@ -1,12 +1,17 @@
 variable "create_ecs" {
   description = "Controls if ECS should be created"
   type        = bool
-  default     = false
+  default     = true
 }
 variable "name" {
   description = "Name to be used on all the resources as identifier, also the name of the ECS cluster"
   type        = string
   default     = "default-campspot-ecs"
+}
+variable "kms_key_id" {
+  description = "KMS key arn to be used for logging"
+  type        = string
+  default     = ""
 }
 variable "tags" {
   description = "A map of tags to add to ECS Cluster"
