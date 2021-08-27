@@ -16,13 +16,6 @@ variable "kms_key_id" {
 variable "tags" {
   description = "A map of tags to add to ECS Cluster"
   type        = map(string)
-  default     = {
-    name = "default-campspot-ecs",
-    customer    = "campspot-default",
-    environment = "default",
-    costcenter  = "default",
-    application = "default",
-  }
 }
 variable "capacity_providers" {
   description = "List of short names of one or more capacity providers to associate with the cluster. Valid values also include FARGATE and FARGATE_SPOT."
